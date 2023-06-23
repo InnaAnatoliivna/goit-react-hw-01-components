@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+//styles
+import css from 'components/app.module.css'
 //1 task
 import Profile from "./1-profile/Profile";
 import profile from 'data/user.json'
@@ -48,14 +50,14 @@ export const App = () => {
   }
 
   return (
-    <div>
-      <h1>React homework 01. Components</h1>
-      <div>
+    <div className={css.container}>
+      <h1 className={css.title}>React homework 01. Components</h1>
+      <div className={css.wrapperBtn}>
 
-        <button type='button' onClick={() => setCurrentTask('Profile')}>Profile</button>
-        <button type='button' onClick={() => setCurrentTask('Statistics')}>Statistics</button>
-        <button type='button' onClick={() => setCurrentTask('FriendList')}>FriendList</button>
-        <button type='button' onClick={() => setCurrentTask('TransactionHistory')}>TransactionHistory</button>
+        <button className={css.btn} type='button' onClick={() => setCurrentTask('Profile')}>Profile</button>
+        <button className={css.btn} type='button' onClick={() => setCurrentTask('Statistics')}>Statistics</button>
+        <button className={css.btn} type='button' onClick={() => setCurrentTask('FriendList')}>FriendList</button>
+        <button className={css.btn} type='button' onClick={() => setCurrentTask('TransactionHistory')}>TransactionHistory</button>
 
       </div>
       {renderTask()}

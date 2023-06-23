@@ -1,0 +1,16 @@
+.friend_list {
+  width: 600px;
+  padding: 20px;
+}
+.item {
+  background-color: var(--background-light);
+  border: 0.5px solid #6e898e69;
+  box-shadow: -1px 3px 5px 0px rgba(110, 137, 142, 0.75);
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(110, 137, 142, 0.75);
+  -moz-box-shadow: -1px 3px 5px 0px rgba(110, 137, 142, 0.75);
+  border-radius: 8px;
+  padding: 15px 28px;
+}
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}

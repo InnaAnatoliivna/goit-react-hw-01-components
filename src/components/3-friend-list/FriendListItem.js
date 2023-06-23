@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
-import defaultImage from 'default-avatar-profile.jpg'
+import defaultImage from 'default-avatar-profile.jpg';
+import css from 'components/3-friend-list/friendListItem.module.css'
 
-const FriendListItem = ({ avatar = defaultImage, name, isOnline }) => {
+const FriendListItem = ({ avatar = defaultImage, name, isOnline, id }) => {
     return (
-        <div>
-            <span className={isOnline.toString()}></span>
-            <img className="avatar" src={avatar} alt="User avatar" width="48" />
-            <p className="name">{name}</p>
+        <div className={css.wrapper}>
+            <span className={css.isOnline} style={{ backgroundColor: isOnline ? "green" : "red" }}></span>
+            <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+            <p className={css.name}>{name}</p>
         </div>
     )
 }

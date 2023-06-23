@@ -1,0 +1,10 @@
+.transaction_history {
+  width: 600px;
+}
+
+tr {
+  background-color: var(--background-light);
+}
+tr:nth-child(2n) {
+  background-color: var(--background-dark);
+}

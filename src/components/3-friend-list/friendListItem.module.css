@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.isOnline {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(129, 129, 129);
+}
+.avatar {
+  width: 80px;
+}
+.name {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--title-color);
+}

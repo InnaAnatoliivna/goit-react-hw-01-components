@@ -17,3 +17,6 @@
   font-weight: 500;
   color: var(--title-color);
 }
+/* .text::first-letter {
+  text-transform: uppercase;
+} */
